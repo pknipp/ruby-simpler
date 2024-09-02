@@ -9,7 +9,7 @@ class WelcomeController < ApplicationController
   def show
     id = params[:id]
     # render plain: id
-    @number = id
+    @number = id.to_f
     render 'show'
   end
 
