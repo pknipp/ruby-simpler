@@ -1,15 +1,14 @@
 class WelcomeController < ApplicationController
 
-  # GET /welcome
+  # GET /
   def index
 
   end
 
-  # GET /welcome/:id
+  # GET /:id
   def show
     id = params[:id]
-    # render plain: id
-    @number = id.to_f
+    @id = id
     render 'show'
   end
 
