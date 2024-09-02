@@ -5,4 +5,10 @@ class WelcomeController < ApplicationController
 
   end
 
+  # GET /welcome/:id
+  def show
+    id = params[:id]
+    render plain: id
+  end
+
 end
